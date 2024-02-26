@@ -7,19 +7,19 @@
     <table>
       <thead>
         <tr>
-         
-          <th>Name&nbsp;</th>
-          <th>Short Name &nbsp;</th>
-          <th>Description&nbsp;</th>
+          <th>No</th>
+          <th>Name</th>
+          <th>Short Name</th>
+          <th>Description</th>
           <th></th>
         </tr>
       </thead>
       <tbody>
         <tr ng-repeat="item in foundItems">
-         
-          <td> {{ item.name }} &nbsp;</td>
-          <td> {{ item.short_name }}&nbsp; </td>
-          <td> {{ item.description }} &nbsp; </td>
+          <td> {{ $index+1 }} </td>
+          <td> {{ item.name }} </td>
+          <td> {{ item.short_name }} </td>
+          <td> {{ item.description }} </td>
           <td> <button ng-click="onRemove({index: $index});">Don't want this one!</button></td>
         </tr>
     </tbody>
